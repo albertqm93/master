@@ -1,0 +1,87 @@
+//
+//    VARIABLES
+//
+//    + Colors
+//    + Spacing
+//    + Fonts
+//    + Media queries breakpoints
+//    + Responsive
+//
+// --------------------------------------------------
+
+/* ==================================================
+      COLORS
+================================================== */
+
+$primary-color:                         #00b09b;
+
+$gray-10:                                 #333;
+$gray-20:                                 #eee;
+$gray-30:                                 #ddd;
+
+
+/* ==================================================
+      SPACING
+================================================== */
+
+$padding-m:                          10px;
+$padding-l:                          15px;
+
+
+/* ==================================================
+      FONTS
+================================================== */
+
+$font-stack--default:               'Roboto', sans-serif;
+$font-stack--title:                 'Open Sans', sans-serif;
+
+$font-size--default:                16px;
+$font-size--h1:                     $font-size--default * 2.5;
+$font-size--h2:                     $font-size--default * 2;
+$font-size--h3:                     $font-size--default * 1.8;
+$font-size--h4:                     $font-size--default * 1.5;
+
+
+/* ==================================================
+      MEDIA QUERIES BREAKPOINTS
+================================================== */
+
+$viewports:(
+  'tablet':               768px,
+  'laptop':               1024px,
+);
+
+@function vp($viewport) {
+  @return map-get($viewports, $viewport);
+}
+
+/* ==================================================
+      VIEWS :: MIXINS
+================================================== */
+
+
+
+// decrecientes
+
+@mixin tablet{
+  @media ( max-width: vp('laptop')-1 ) {
+    @content;
+  }
+}
+
+// valores exactos
+@mixin mobile{
+  @media ( max-width: vp('tablet')-1 ) {
+    @content;
+  }
+}
+
+#header{
+    width: 100%;
+    @include tablet{
+        width: 600px
+    }
+    @include mobile{
+        width: 100px
+    }
+}
