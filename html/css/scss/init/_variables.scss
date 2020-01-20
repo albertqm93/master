@@ -45,8 +45,12 @@ $font-size--h4:                     $font-size--default * 1.5;
 
 $line-heigth:                       1.6;
 
+$font-weight--default:              normal;
+$font-weight--bold:                 bold;
 
 $header-height: 40px;
+$footer-height: 80px;
+$prefooter-height: 0px;
 
 /* ==================================================
       MEDIA QUERIES BREAKPOINTS
