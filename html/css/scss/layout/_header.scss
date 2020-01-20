@@ -1,0 +1,28 @@
+
+
+#header{
+    background-color: $gray-40;
+
+    .wrapper{
+        height: $header-height;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+         @include mobile{
+            justify-content: space-between;
+        }
+    }
+    #logo{
+        padding-right: $padding-m;
+        font-size: $font-size--h4;
+        color: $primary-color;
+    }
+    
+    @include mobile {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 2;
+    }
+}

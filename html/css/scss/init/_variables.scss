@@ -6,6 +6,7 @@
 //    + Fonts
 //    + Media queries breakpoints
 //    + Responsive
+//    + Mixin square sizing
 //
 // --------------------------------------------------
 
@@ -18,14 +19,15 @@ $primary-color:                         #00b09b;
 $gray-10:                                 #333;
 $gray-20:                                 #eee;
 $gray-30:                                 #ddd;
+$gray-40:                                 #f0f0f0;
 
 
 /* ==================================================
       SPACING
 ================================================== */
 
-$padding-m:                          10px;
-$padding-l:                          15px;
+$padding-m:                          20px;
+$padding-l:                          30px;
 
 
 /* ==================================================
@@ -41,6 +43,10 @@ $font-size--h2:                     $font-size--default * 2;
 $font-size--h3:                     $font-size--default * 1.8;
 $font-size--h4:                     $font-size--default * 1.5;
 
+$line-heigth:                       1.6;
+
+
+$header-height: 40px;
 
 /* ==================================================
       MEDIA QUERIES BREAKPOINTS
@@ -76,12 +82,12 @@ $viewports:(
   }
 }
 
-#header{
-    width: 100%;
-    @include tablet{
-        width: 600px
-    }
-    @include mobile{
-        width: 100px
-    }
+
+/* ==================================================
+      SQUARE SIZING
+================================================== */
+
+@mixin square_size ($size) {
+    width: $size;
+    height: $size;
 }

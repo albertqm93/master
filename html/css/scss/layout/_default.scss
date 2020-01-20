@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    @include mobile {
+        padding-top: $header-height;
+    }
+}
+.wrapper{
+    margin: auto;
+    width: 100%;
+    max-width: vp('laptop');
+    padding: 0 $padding-m;
+}
