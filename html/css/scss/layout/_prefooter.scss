@@ -1,0 +1,21 @@
+#prefooter{
+    background-color: $primary-color;
+    color:$gray-40;
+
+    .wrapper{
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding-right: 15%;
+        justify-content: space-around;
+
+        @include mobile{
+            padding: 0 0px;
+            flex-direction: column;
+            ul{
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -311,6 +311,120 @@ table {
   margin-left: 10px;
 }
 
+#prefooter {
+  background-color: #00b09b;
+  color: #f0f0f0;
+}
+
+#prefooter .wrapper {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 15%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  #prefooter .wrapper {
+    padding: 0 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #prefooter .wrapper ul {
+    margin-top: 20px;
+  }
+}
+
+#footer {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+#footer .wrapper {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  #footer .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 80px;
+  }
+}
+
+#footer p {
+  padding-right: 20px;
+}
+
+#footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 38.4px;
+}
+
+#footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 0 20px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#footer a.active {
+  background-color: #ddd;
+}
+
+@media screen and (min-width: 1025px) {
+  #footer a:hover {
+    background-color: #00b09b;
+    color: #fff;
+  }
+}
+
 html, body {
   font: 16px/1.6 "Roboto", sans-serif;
   color: #333;

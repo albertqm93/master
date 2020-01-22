@@ -1,0 +1,50 @@
+#footer{
+    background-color: $gray-10;
+    color:$gray-40;
+    .wrapper{
+        height: $footer-height;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile{
+            display:flex;
+            padding: 0 0px;
+            flex-direction: column;
+            height: $footer-height--mobile;
+        }
+    }
+
+    p{
+        padding-right: $padding-m;
+    }
+
+    ul{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        line-height: $font-size--h4 * $line-heigth;
+    }
+    li{
+        display: flex;
+    }
+    a{
+        color:$gray-40;
+        text-decoration: none;
+        padding: 0 $padding-m;
+        transition: all .2s;
+        &.active{
+            background-color: $gray-30;
+        }
+        @media screen and (min-width: vp('laptop')+1) {
+            &:hover{
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+    }
+}
+
+$menu_launcher-size: 15px;
+$menu_launcher-color: $gray-10;
