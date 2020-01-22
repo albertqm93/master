@@ -2,3 +2,20 @@ html, body{
     font: #{$font-size--default}/#{$line-heigth} $font-stack--default;
     color: $gray-10;
 }
+
+h1, h2, h3, h4{
+    font-weight: bold;
+    font-family: $font-stack--title;
+}
+h1{
+    font-size: $font-size--h1;
+}
+h2{
+    font-size: $font-size--h2;
+}
+h3{
+    font-size: $font-size--h3;
+}
+h4{
+    font-size: $font-size--h4;
+}

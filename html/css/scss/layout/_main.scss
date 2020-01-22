@@ -1,0 +1,19 @@
+.title_page{
+    background-color: $primary-color;
+    color: #fff;
+}
+#main{
+    .wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+
+.main_content{
+    flex: 3 0 60%;
+    margin-right: $padding-m/2;
+}
+.main_side{
+    flex: 1 0 30%;
+    margin-left: $padding-m/2;
+}
