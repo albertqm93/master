@@ -2,7 +2,7 @@
     background-color: $gray-10;
     color:$gray-40;
     .wrapper{
-        height: $header-height;
+        height: $footer-height;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -12,7 +12,7 @@
             display:flex;
             padding: 0 0px;
             flex-direction: column;
-            height: $footer-height;
+            height: $footer-height--mobile;
         }
     }
 

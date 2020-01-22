@@ -2,3 +2,8 @@ html, body{
     font: #{$font-size--default}/#{$line-heigth} $font-stack--default;
     color: $gray-10;
 }
+
+h2{
+    font-size: $font-size--h2;
+    font-weight: $font-weight--bold;
+}

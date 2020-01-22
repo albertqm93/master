@@ -317,11 +317,6 @@ table {
   }
 }
 
-h2 {
-  font-size: 32px;
-  font-weight: bold;
-}
-
 #footer {
   background-color: #333;
   color: #f0f0f0;
@@ -404,5 +399,10 @@ h2 {
 html, body {
   font: 16px/1.6 "Roboto", sans-serif;
   color: #333;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=web-photo-app.css.map */
