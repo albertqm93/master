@@ -83,7 +83,7 @@ table {
 }
 
 .wrapper {
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 1024px;
   padding: 0 20px;
@@ -285,5 +285,161 @@ table {
 html, body {
   font: 16px/1.6 "Roboto", sans-serif;
   color: #333;
+}
+
+.hero_home {
+  background: url("../img/site_showcase_bg.jpg") no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-top: 20px;
+  color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .hero_home {
+    height: 60vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero_home {
+    height: 465px;
+  }
+}
+
+.hero_home .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.hero_home .wrapper > * {
+  width: 50%;
+}
+
+@media (max-width: 1023px) {
+  .hero_home .wrapper > * {
+    width: 100%;
+    padding: 10vw;
+  }
+}
+
+.hero_home .content {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 2em;
+}
+
+@media (max-width: 1023px) {
+  .hero_home .content {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.hero_home .hero_img img {
+  height: 100%;
+}
+
+@media (max-width: 1023px) {
+  .hero_home .hero_img {
+    display: none;
+  }
+}
+
+.hero_home h1 {
+  font-size: 40px;
+}
+
+.hero_home h1 em {
+  color: #00b09b;
+}
+
+.hero_home .list_stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+}
+
+@media (max-width: 1023px) {
+  .hero_home .list_stores {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero_home .list_stores {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.hero_home .list_stores a {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  height: 50px;
+  margin: 0 20px;
+  background-size: cover;
+}
+
+@media (max-width: 1023px) {
+  .hero_home .list_stores a {
+    height: 68px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero_home .list_stores a {
+    margin-bottom: 20px;
+  }
+}
+
+.hero_home .list_stores .appStore {
+  width: 172px;
+  background-image: url("../img/icon_app_store.png");
+}
+
+@media (max-width: 1023px) {
+  .hero_home .list_stores .appStore {
+    width: 235px;
+  }
+}
+
+.hero_home .list_stores .googlePlay {
+  width: 145px;
+  background-image: url("../img/icon_google_play.png");
+}
+
+@media (max-width: 1023px) {
+  .hero_home .list_stores .googlePlay {
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=web-photo-app.css.map */

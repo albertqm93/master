@@ -1,0 +1,91 @@
+
+.hero_home{
+    background: url('../img/site_showcase_bg.jpg') no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: stretch;
+    padding-top: $padding-m;
+    color: #fff;
+    @include tablet{
+        height: 60vw;
+    }
+    @include mobile{
+        height: 465px;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        & > * {
+            width: 50%;
+            @include tablet{
+                width: 100%;
+                padding: 10vw;
+            }
+        }
+    }
+    .content{
+        align-self: flex-start;
+        padding-top: 2em;
+        @include tablet{
+            text-align: center;
+            align-self: center;
+        }
+    }
+    .hero_img{
+        img{
+            height: 100%;
+        }
+        @include tablet {
+            display: none;
+        }
+    }
+    h1{
+        font-size: $font-size--h1;
+        em{
+            color: $primary-color;
+        }
+    }
+    .list_stores{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-top: $padding-m;
+        @include tablet{
+            justify-content: space-between;
+        }
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+        }
+        a{
+            display: block;
+            text-indent: -999em;
+            overflow: hidden;
+            height: 50px;
+            margin: 0 $padding-m;
+            background-size: cover;
+            @include tablet{
+                height: 68px;
+            }
+            @include mobile{
+                margin-bottom: $padding-m;
+            }
+        }
+        .appStore{
+            width: 172px;
+            background-image: url('../img/icon_app_store.png');
+            @include tablet{
+                width: 235px;
+            }
+        }
+        .googlePlay{
+            width: 145px;
+            background-image: url('../img/icon_google_play.png');
+            @include tablet{
+                width: 200px;
+            }
+        }
+    }
+}
