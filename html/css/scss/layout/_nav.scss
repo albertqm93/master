@@ -15,7 +15,7 @@ $menu_launcher-color: $gray-10;
         }
         .burguer,
         &:before,
-        &::after{
+        &::after{   
             position: absolute;
             left: 0;
             width: 100%;
