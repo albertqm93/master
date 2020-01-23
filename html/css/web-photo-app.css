@@ -606,4 +606,72 @@ h4 {
     width: 200px;
   }
 }
+
+.box {
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.box_header {
+  padding: 10px;
+}
+
+.box_content {
+  padding: 10px;
+}
+
+.box_content img {
+  width: 100%;
+}
+
+.box_footer {
+  padding: 10px;
+}
+
+.box_footer a {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  color: #333;
+  text-decoration: none;
+  padding: .5em 1em;
+  display: inline-block;
+}
+
+.box_footer a:hover {
+  border-color: #00b09b;
+  background-color: #00b09b;
+  color: #fff;
+}
+
+.box.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.collapsableItem {
+  margin-bottom: 20px;
+}
+
+.collapsableItem input {
+  display: none;
+}
+
+.collapsableItem input ~ label,
+.collapsableItem input ~ * > label {
+  cursor: pointer;
+  display: block;
+}
+
+.collapsableItem input ~ .collapsableContent {
+  display: none;
+}
+
+.collapsableItem input:checked ~ .collapsableContent {
+  display: block;
+}
 /*# sourceMappingURL=web-photo-app.css.map */

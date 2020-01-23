@@ -1,0 +1,20 @@
+.collapsableItem{
+    margin-bottom: $padding-m;
+    input{
+        display: none;
+        ~ label,
+        ~ * > label{
+            cursor: pointer;
+            display: block;
+        }
+        ~ .collapsableContent{
+            display: none;
+        }
+
+        &:checked{
+            ~ .collapsableContent{
+                display: block;
+            }   
+        }
+    }
+}
